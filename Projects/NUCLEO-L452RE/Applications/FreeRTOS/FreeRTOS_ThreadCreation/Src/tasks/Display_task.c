@@ -42,7 +42,7 @@ void UIctrl_Thread(void const *argument)
 
     /* Turn off LED2 */
 //    BSP_LED_Off(LED2);
-    DPrint_Out("KeyValue = %d!\r\n",&KeyValue);
+//    DPrint_Out("KeyValue = %d!\r\n",&KeyValue);
     /* Resume Thread 2 */
     osThreadResume(Sysctrl_Handle);
     /* Suspend Thread 1 : current thread */

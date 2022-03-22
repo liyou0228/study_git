@@ -16,7 +16,7 @@
         <LeaveTargetRunning>_ 0</LeaveTargetRunning>
     </StLinkDriver>
     <DebugChecksum>
-        <Checksum>3566009521</Checksum>
+        <Checksum>886040096</Checksum>
     </DebugChecksum>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
@@ -112,15 +112,25 @@
         <ShowTimeSum>1</ShowTimeSum>
         <SumSortOrder>0</SumSortOrder>
     </EventLog>
+    <DisassembleMode>
+        <mode>0</mode>
+    </DisassembleMode>
+    <Breakpoints2>
+        <Count>0</Count>
+    </Breakpoints2>
     <LogFile>
         <LoggingEnabled>_ 0</LoggingEnabled>
         <LogFile>_ ""</LogFile>
         <Category>_ 0</Category>
     </LogFile>
-    <TermIOLog>
-        <LoggingEnabled>_ 0</LoggingEnabled>
-        <LogFile>_ ""</LogFile>
-    </TermIOLog>
+    <Aliases>
+        <A0>_ "D:\电子资料 PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\st\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal.c" ""</A0>
+        <A1>_ "D:\电子资料 PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\st\Middlewares\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F\portasm.s" ""</A1>
+        <A2>_ "D:\电子资料 PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\st\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\Src\board_init.c" ""</A2>
+        <A3>_ "D:\电子资料 PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\st\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\Src\main.c" ""</A3>
+        <Count>4</Count>
+        <SuppressDialog>1</SuppressDialog>
+    </Aliases>
     <DriverProfiling>
         <Enabled>0</Enabled>
         <Mode>1</Mode>
@@ -139,18 +149,8 @@
         <Probe0>I0</Probe0>
         <ProbeSetup0>2 1 1 2 0 0</ProbeSetup0>
     </PowerProbe>
-    <DisassembleMode>
-        <mode>0</mode>
-    </DisassembleMode>
-    <Breakpoints2>
-        <Count>0</Count>
-    </Breakpoints2>
-    <Aliases>
-        <A0>_ "D:\电子资料 PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\st\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal.c" ""</A0>
-        <A1>_ "D:\电子资料 PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\st\Middlewares\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F\portasm.s" ""</A1>
-        <A2>_ "D:\电子资料 PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\st\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\Src\board_init.c" ""</A2>
-        <A3>_ "D:\电子资料 PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\st\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\Src\main.c" ""</A3>
-        <Count>4</Count>
-        <SuppressDialog>1</SuppressDialog>
-    </Aliases>
+    <TermIOLog>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ ""</LogFile>
+    </TermIOLog>
 </settings>

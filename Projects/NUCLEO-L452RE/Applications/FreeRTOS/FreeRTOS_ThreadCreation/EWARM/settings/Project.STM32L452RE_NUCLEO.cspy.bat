@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "D:\电子资料 PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\settings\Project.STM32L452RE_NUCLEO.general.xcl" --backend -f "D:\电子资料 PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\settings\Project.STM32L452RE_NUCLEO.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\settings\Project.STM32L452RE_NUCLEO.general.xcl" --backend -f "D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\settings\Project.STM32L452RE_NUCLEO.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "D:\电子资料 PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\settings\Project.STM32L452RE_NUCLEO.general.xcl" "--debug_file=%~1" --backend -f "D:\电子资料 PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\settings\Project.STM32L452RE_NUCLEO.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\settings\Project.STM32L452RE_NUCLEO.general.xcl" "--debug_file=%~1" --backend -f "D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\settings\Project.STM32L452RE_NUCLEO.driver.xcl" 
 
 @echo off 
 :end

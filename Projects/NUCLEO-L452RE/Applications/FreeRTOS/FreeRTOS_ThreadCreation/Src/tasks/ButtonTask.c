@@ -56,30 +56,35 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
   if((GPIO_Pin == GPIO_PIN_6))
   {
      KeyValue = BUTTON_POWER;
+     DPrint_Out("Power button is pressed!");
   //    setButtonIdEvent(BUTTON_POWER);
   //    HAL_TIM_Base_Start_IT(&TimHandle3);
   }
   else if((GPIO_Pin == GPIO_PIN_9))
   {
     KeyValue = BUTTON_MENU;
+     DPrint_Out("Menue button is pressed!");    
   //    setButtonIdEvent(BUTTON_MENU);
   //    HAL_TIM_Base_Start_IT(&TimHandle3);
   }
   else if((GPIO_Pin == GPIO_PIN_5))
   {
     KeyValue = BUTTON_UP;
+    DPrint_Out("Up button is pressed!");
   //    setButtonIdEvent(BUTTON_UP);
   //    HAL_TIM_Base_Start_IT(&TimHandle3);
   }
   else if((GPIO_Pin == GPIO_PIN_8))
   {
     KeyValue = BUTTON_DOWN;
+    DPrint_Out("Down button is pressed!");
   //    setButtonIdEvent(BUTTON_DOWN);
   //    HAL_TIM_Base_Start_IT(&TimHandle3);
   }
   else if((GPIO_Pin == GPIO_PIN_2))
   {
     KeyValue = BUTTON_USB;
+    DPrint_Out("Usb cable is pluged in!");
   //    setButtonIdEvent(BUTTON_USB);
   //    HAL_TIM_Base_Start_IT(&TimHandle3);
   }

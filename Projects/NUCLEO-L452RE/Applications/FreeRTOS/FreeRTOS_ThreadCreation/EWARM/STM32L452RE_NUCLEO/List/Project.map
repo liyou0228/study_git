@@ -1,84 +1,51 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.20.1.14183/W32 for ARM                22/Mar/2022  11:16:13
+# IAR ELF Linker V8.20.1.14183/W32 for ARM                22/Mar/2022  13:55:47
 # Copyright 2007-2017 IAR Systems AB.
 #
 #    Output file  =  
-#        D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Exe\Project.out
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Exe\Project.out
 #    Map file     =  
-#        D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\List\Project.map
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\List\Project.map
 #    Command line =  
-#        -f C:\Users\Leoli\AppData\Local\Temp\EWEC1E.tmp ("D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\board_init.o"
-#        "D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\ButtonTask.o"
-#        "D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\cmsis_os.o"
-#        "D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\Display_task.o"
-#        "D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\heap_4.o"
-#        "D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\lcddriver_ist3088.o"
-#        "D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\list.o"
-#        "D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\main.o"
-#        "D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\port.o"
-#        "D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\portasm.o"
-#        "D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\queue.o"
-#        "D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\startup_stm32l452xx.o"
-#        "D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\stm32l4xx_hal.o"
-#        "D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\stm32l4xx_hal_cortex.o"
-#        "D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\stm32l4xx_hal_dma.o"
-#        "D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\stm32l4xx_hal_gpio.o"
-#        "D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\stm32l4xx_hal_i2c.o"
-#        "D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\stm32l4xx_hal_pwr.o"
-#        "D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\stm32l4xx_hal_pwr_ex.o"
-#        "D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\stm32l4xx_hal_rcc.o"
-#        "D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\stm32l4xx_hal_spi.o"
-#        "D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\stm32l4xx_hal_tim.o"
-#        "D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\stm32l4xx_hal_tim_ex.o"
-#        "D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\stm32l4xx_hal_timebase_tim.o"
-#        "D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\stm32l4xx_hal_uart.o"
-#        "D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\stm32l4xx_it.o"
-#        "D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\stm32l4xx_nucleo.o"
-#        "D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\System_ctrl.o"
-#        "D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\system_stm32l4xx.o"
-#        "D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\tasks.o"
-#        "D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\timers.o"
+#        -f C:\Users\Leoli\AppData\Local\Temp\EW442.tmp
+#        (D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\board_init.o
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\ButtonTask.o
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\cmsis_os.o
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\Display_task.o
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\heap_4.o
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\lcddriver_ist3088.o
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\list.o
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\main.o
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\port.o
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\portasm.o
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\queue.o
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\startup_stm32l452xx.o
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\stm32l4xx_hal.o
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\stm32l4xx_hal_cortex.o
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\stm32l4xx_hal_dma.o
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\stm32l4xx_hal_gpio.o
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\stm32l4xx_hal_i2c.o
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\stm32l4xx_hal_pwr.o
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\stm32l4xx_hal_pwr_ex.o
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\stm32l4xx_hal_rcc.o
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\stm32l4xx_hal_spi.o
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\stm32l4xx_hal_tim.o
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\stm32l4xx_hal_tim_ex.o
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\stm32l4xx_hal_timebase_tim.o
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\stm32l4xx_hal_uart.o
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\stm32l4xx_it.o
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\stm32l4xx_nucleo.o
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\System_ctrl.o
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\system_stm32l4xx.o
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\tasks.o
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj\timers.o
 #        --redirect _Printf=_PrintfSmall --redirect _Scanf=_ScanfSmall -o
-#        "D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Exe\Project.out"
-#        --map "D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\List\Project.map"
-#        --config "D:\电子资料
-#        PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\stm32l452xx_flash.icf"
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Exe\Project.out
+#        --map
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\List\Project.map
+#        --config
+#        D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\stm32l452xx_flash.icf
 #        --semihosting --entry __iar_program_start --vfe --text_out locale)
 #
 ###############################################################################
@@ -120,7 +87,7 @@ initialize by copy { rw };
   .intvec            ro code  0x08000000    0x194  startup_stm32l452xx.o [1]
                             - 0x08000194    0x194
 
-"P1":                                      0x53f4
+"P1":                                      0x58c1
   .text              ro code  0x08000194    0x870  stm32l4xx_hal_rcc.o [1]
   .text              ro code  0x08000a04     0x90  stm32l4xx_hal_timebase_tim.o [1]
   .text              ro code  0x08000a94      0xc  stm32l4xx_hal.o [1]
@@ -145,70 +112,35 @@ initialize by copy { rw };
   .text              ro code  0x08001c3c    0x634  lcddriver_ist3088.o [1]
   .text              ro code  0x08002270     0xe4  cmsis_os.o [1]
   .text              ro code  0x08002354    0x19c  stm32l4xx_hal_gpio.o [1]
-  .text              ro code  0x080024f0    0x10c  ButtonTask.o [1]
-  .text              ro code  0x080025fc      0x6  ABImemclr4.o [5]
-  .text              ro code  0x08002604    0x5a0  stm32l4xx_hal_uart.o [1]
-  .text              ro code  0x08002ba4      0x2  stm32l4xx_hal_uart.o [1]
-  .text              ro code  0x08002ba8    0x22e  I64DivMod.o [5]
-  .text              ro code  0x08002dd8      0x2  I64DivZer.o [5]
-  .text              ro code  0x08002ddc    0x150  board_init.o [1]
-  .text              ro code  0x08002f2c     0x36  strlen.o [5]
-  .text              ro code  0x08002f64     0xf4  main.o [1]
-  .text              ro code  0x08003058     0x22  stm32l4xx_hal.o [1]
-  .text              ro code  0x0800307c     0x88  stm32l4xx_nucleo.o [1]
-  .text              ro code  0x08003104     0x86  ABImemcpy.o [5]
-  .text              ro code  0x0800318c     0xac  Display_task.o [1]
-  .text              ro code  0x08003238     0x8c  system_stm32l4xx.o [1]
-  .text              ro code  0x080032c4     0x64  stm32l4xx_it.o [1]
-  .text              ro code  0x08003328     0x48  System_ctrl.o [1]
-  .text              ro code  0x08003370     0x40  zero_init3.o [5]
-  .text              ro code  0x080033b0     0x28  data_init.o [5]
-  .text              ro code  0x080033d8     0x22  fpinit_M.o [4]
-  .iar.init_table    const    0x080033fc     0x20  - Linker created -
-  .text              ro code  0x0800341c     0x1e  cmain.o [5]
-  .text              ro code  0x0800343a      0x4  low_level_init.o [3]
-  .text              ro code  0x0800343e      0x4  exit.o [3]
-  .text              ro code  0x08003444      0xa  cexit.o [5]
-  .text              ro code  0x08003450     0x14  exit.o [6]
-  .rodata            const    0x08003464     0x18  main.o [1]
-  .text              ro code  0x0800347c     0x10  startup_stm32l452xx.o [1]
-  .text              ro code  0x0800348c      0xc  cstartup_M.o [5]
-  .rodata            const    0x08003498      0x8  system_stm32l4xx.o [1]
-  .text              ro code  0x080034a0      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x080034a4      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x080034a8      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x080034ac      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x080034b0      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x080034b4      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x080034b8      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x080034bc      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x080034c0      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x080034c4      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x080034c8      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x080034cc      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x080034d0      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x080034d4      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x080034d8      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x080034dc      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x080034e0      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x080034e4      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x080034e8      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x080034ec      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x080034f0      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x080034f4      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x080034f8      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x080034fc      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x08003500      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x08003504      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x08003508      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x0800350c      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x08003510      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x08003514      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x08003518      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x0800351c      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x08003520      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x08003524      0x4  startup_stm32l452xx.o [1]
-  .text              ro code  0x08003528      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x080024f0    0x1b8  ButtonTask.o [1]
+  .text              ro code  0x080026a8      0x6  ABImemclr4.o [5]
+  .text              ro code  0x080026b0    0x150  board_init.o [1]
+  .text              ro code  0x08002800     0x36  strlen.o [5]
+  .text              ro code  0x08002838    0x5a0  stm32l4xx_hal_uart.o [1]
+  .text              ro code  0x08002dd8      0x2  stm32l4xx_hal_uart.o [1]
+  .text              ro code  0x08002ddc    0x22e  I64DivMod.o [5]
+  .text              ro code  0x0800300c      0x2  I64DivZer.o [5]
+  .text              ro code  0x08003010     0xf4  main.o [1]
+  .text              ro code  0x08003104     0x22  stm32l4xx_hal.o [1]
+  .text              ro code  0x08003128     0x88  stm32l4xx_nucleo.o [1]
+  .text              ro code  0x080031b0     0x86  ABImemcpy.o [5]
+  .text              ro code  0x08003238     0x8c  Display_task.o [1]
+  .text              ro code  0x080032c4     0x8c  system_stm32l4xx.o [1]
+  .text              ro code  0x08003350     0x64  stm32l4xx_it.o [1]
+  .text              ro code  0x080033b4     0x48  System_ctrl.o [1]
+  .text              ro code  0x080033fc     0x40  zero_init3.o [5]
+  .text              ro code  0x0800343c     0x28  data_init.o [5]
+  .text              ro code  0x08003464     0x22  fpinit_M.o [4]
+  .iar.init_table    const    0x08003488     0x20  - Linker created -
+  .text              ro code  0x080034a8     0x1e  cmain.o [5]
+  .text              ro code  0x080034c6      0x4  low_level_init.o [3]
+  .text              ro code  0x080034ca      0x4  exit.o [3]
+  .text              ro code  0x080034d0      0xa  cexit.o [5]
+  .text              ro code  0x080034dc     0x14  exit.o [6]
+  .rodata            const    0x080034f0     0x18  main.o [1]
+  .text              ro code  0x08003508     0x10  startup_stm32l452xx.o [1]
+  .text              ro code  0x08003518      0xc  cstartup_M.o [5]
+  .rodata            const    0x08003524      0x8  system_stm32l4xx.o [1]
   .text              ro code  0x0800352c      0x4  startup_stm32l452xx.o [1]
   .text              ro code  0x08003530      0x4  startup_stm32l452xx.o [1]
   .text              ro code  0x08003534      0x4  startup_stm32l452xx.o [1]
@@ -240,36 +172,71 @@ initialize by copy { rw };
   .text              ro code  0x0800359c      0x4  startup_stm32l452xx.o [1]
   .text              ro code  0x080035a0      0x4  startup_stm32l452xx.o [1]
   .text              ro code  0x080035a4      0x4  startup_stm32l452xx.o [1]
-  .rodata            const    0x080035a8      0x0  zero_init3.o [5]
-  .rodata            const    0x080035a8      0x0  lz77_init_single.o [5]
-  Initializer bytes  const    0x080035a8   0x1fe0  <for P2-1>
-                            - 0x08005588   0x53f4
+  .text              ro code  0x080035a8      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x080035ac      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x080035b0      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x080035b4      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x080035b8      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x080035bc      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x080035c0      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x080035c4      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x080035c8      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x080035cc      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x080035d0      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x080035d4      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x080035d8      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x080035dc      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x080035e0      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x080035e4      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x080035e8      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x080035ec      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x080035f0      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x080035f4      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x080035f8      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x080035fc      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x08003600      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x08003604      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x08003608      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x0800360c      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x08003610      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x08003614      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x08003618      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x0800361c      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x08003620      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x08003624      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x08003628      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x0800362c      0x4  startup_stm32l452xx.o [1]
+  .text              ro code  0x08003630      0x4  startup_stm32l452xx.o [1]
+  .rodata            const    0x08003634      0x0  zero_init3.o [5]
+  .rodata            const    0x08003634      0x0  lz77_init_single.o [5]
+  Initializer bytes  const    0x08003634   0x2421  <for P2-1>
+                            - 0x08005a55   0x58c1
 
-"P2", part 1 of 3:                         0x6750
-  P2-1                        0x20000000   0x6750  <Init block>
-    .data            inited   0x20000000   0x6730  lcddriver_ist3088.o [1]
-    .data            inited   0x20006730      0xc  port.o [1]
-    .data            inited   0x2000673c      0xc  stm32l4xx_hal.o [1]
-    .data            inited   0x20006748      0x4  stm32l4xx_nucleo.o [1]
-    .data            inited   0x2000674c      0x4  system_stm32l4xx.o [1]
-                            - 0x20006750   0x6750
+"P2", part 1 of 3:                         0x70b0
+  P2-1                        0x20000000   0x70b0  <Init block>
+    .data            inited   0x20000000   0x7090  lcddriver_ist3088.o [1]
+    .data            inited   0x20007090      0xc  port.o [1]
+    .data            inited   0x2000709c      0xc  stm32l4xx_hal.o [1]
+    .data            inited   0x200070a8      0x4  stm32l4xx_nucleo.o [1]
+    .data            inited   0x200070ac      0x4  system_stm32l4xx.o [1]
+                            - 0x200070b0   0x70b0
 
 "P2", part 2 of 3:                        0x11a20
-  .bss               zero     0x20006750  0x11818  heap_4.o [1]
-  .bss               zero     0x20017f68     0xa0  tasks.o [1]
-  .bss               zero     0x20018008     0x8c  tasks.o [1]
-  .bss               zero     0x20018094     0x80  board_init.o [1]
-  .bss               zero     0x20018114     0x4c  stm32l4xx_hal_timebase_tim.o [1]
-  .bss               zero     0x20018160      0x4  Display_task.o [1]
-  .bss               zero     0x20018164      0x4  main.o [1]
-  .bss               zero     0x20018168      0x4  System_ctrl.o [1]
-  .bss               zero     0x2001816c      0x1  ButtonTask.o [1]
-                            - 0x2001816d  0x11a1d
+  .bss               zero     0x200070b0  0x11818  heap_4.o [1]
+  .bss               zero     0x200188c8     0xa0  tasks.o [1]
+  .bss               zero     0x20018968     0x8c  tasks.o [1]
+  .bss               zero     0x200189f4     0x80  board_init.o [1]
+  .bss               zero     0x20018a74     0x4c  stm32l4xx_hal_timebase_tim.o [1]
+  .bss               zero     0x20018ac0      0x4  Display_task.o [1]
+  .bss               zero     0x20018ac4      0x4  main.o [1]
+  .bss               zero     0x20018ac8      0x4  System_ctrl.o [1]
+  .bss               zero     0x20018acc      0x1  ButtonTask.o [1]
+                            - 0x20018acd  0x11a1d
 
 "P2", part 3 of 3:                          0x400
-  CSTACK                      0x20018170    0x400  <Block>
-    CSTACK           uninit   0x20018170    0x400  <Block tail>
-                            - 0x20018570    0x400
+  CSTACK                      0x20018ad0    0x400  <Block>
+    CSTACK           uninit   0x20018ad0    0x400  <Block tail>
+                            - 0x20018ed0    0x400
 
 
 *******************************************************************************
@@ -280,13 +247,13 @@ initialize by copy { rw };
           -------     ----
 Zero (__iar_zero_init3)
     1 destination range, total size 0x11a1d:
-          0x20006750  0x11a1d
+          0x200070b0  0x11a1d
 
 Copy/lz77 (__iar_lz77_init_single3)
-    1 source range, total size 0x1fe0 (30% of destination):
-          0x080035a8   0x1fe0
-    1 destination range, total size 0x6750:
-          0x20000000   0x6750
+    1 source range, total size 0x2421 (32% of destination):
+          0x08003634   0x2421
+    1 destination range, total size 0x70b0:
+          0x20000000   0x70b0
 
 
 
@@ -296,17 +263,17 @@ Copy/lz77 (__iar_lz77_init_single3)
 
     Module                        ro code  ro data  rw data
     ------                        -------  -------  -------
-D:\电子资料 PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj: [1]
-    ButtonTask.o                      268                 1
-    Display_task.o                    172                 4
+D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj: [1]
+    ButtonTask.o                      440                 1
+    Display_task.o                    140                 4
     System_ctrl.o                      72                 4
     board_init.o                      336               128
     cmsis_os.o                        228
     heap_4.o                          484            71 704
-    lcddriver_ist3088.o             1 588    8 150   26 416
+    lcddriver_ist3088.o             1 588    9 238   28 816
     list.o                            146
     main.o                            244       24        4
-    port.o                            544        3       12
+    port.o                            544        4       12
     portasm.o                         176
     startup_stm32l452xx.o             684
     stm32l4xx_hal.o                    62        4       12
@@ -323,7 +290,7 @@ D:\电子资料 PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\
     system_stm32l4xx.o                140       10        4
     tasks.o                         2 004               300
     -------------------------------------------------------
-    Total:                         12 498    8 192   98 669
+    Total:                         12 638    9 281  101 069
 
 command line: [2]
     -------------------------------------------------------
@@ -364,7 +331,7 @@ shb_l.a: [6]
     Gaps                               20        2
     Linker created                              32    1 024
 -----------------------------------------------------------
-    Grand Total:                   13 670    8 226   99 693
+    Grand Total:                   13 810    9 315  102 093
 
 
 *******************************************************************************
@@ -373,38 +340,38 @@ shb_l.a: [6]
 
 Entry                      Address     Size  Type      Object
 -----                      -------     ----  ----      ------
-.iar.init_table$$Base   0x080033fc            --   Gb  - Linker created -
-.iar.init_table$$Limit  0x0800341c            --   Gb  - Linker created -
-?main                   0x0800341d           Code  Gb  cmain.o [5]
-AHBPrescTable           0x08003284     0x10  Data  Gb  system_stm32l4xx.o [1]
-APBPrescTable           0x08003498      0x8  Data  Gb  system_stm32l4xx.o [1]
-BSP_LED_Init            0x0800307d     0x50  Code  Gb  stm32l4xx_nucleo.o [1]
-BSP_LED_Off             0x080030e3     0x16  Code  Gb  stm32l4xx_nucleo.o [1]
-BSP_LED_On              0x080030cd     0x16  Code  Gb  stm32l4xx_nucleo.o [1]
-Board_GpioInit          0x08002e13     0x64  Code  Gb  board_init.o [1]
-Board_Init              0x08002ddd     0x16  Code  Gb  board_init.o [1]
-BusFault_Handler        0x080032cb      0x2  Code  Gb  stm32l4xx_it.o [1]
-CSTACK$$Base            0x20018170            --   Gb  - Linker created -
-CSTACK$$Limit           0x20018570            --   Gb  - Linker created -
+.iar.init_table$$Base   0x08003488            --   Gb  - Linker created -
+.iar.init_table$$Limit  0x080034a8            --   Gb  - Linker created -
+?main                   0x080034a9           Code  Gb  cmain.o [5]
+AHBPrescTable           0x08003310     0x10  Data  Gb  system_stm32l4xx.o [1]
+APBPrescTable           0x08003524      0x8  Data  Gb  system_stm32l4xx.o [1]
+BSP_LED_Init            0x08003129     0x50  Code  Gb  stm32l4xx_nucleo.o [1]
+BSP_LED_Off             0x0800318f     0x16  Code  Gb  stm32l4xx_nucleo.o [1]
+BSP_LED_On              0x08003179     0x16  Code  Gb  stm32l4xx_nucleo.o [1]
+Board_GpioInit          0x080026e7     0x64  Code  Gb  board_init.o [1]
+Board_Init              0x080026b1     0x16  Code  Gb  board_init.o [1]
+BusFault_Handler        0x08003357      0x2  Code  Gb  stm32l4xx_it.o [1]
+CSTACK$$Base            0x20018ad0            --   Gb  - Linker created -
+CSTACK$$Limit           0x20018ed0            --   Gb  - Linker created -
 DELAY_MS                0x08001c85     0x1c  Code  Gb  lcddriver_ist3088.o [1]
 DELAY_MS_LCD            0x08001ca1     0x1c  Code  Gb  lcddriver_ist3088.o [1]
-DPrint_Out              0x08002df3     0x20  Code  Gb  board_init.o [1]
+DPrint_Out              0x080026c7     0x20  Code  Gb  board_init.o [1]
 Deay_ns                 0x08001cbd     0x24  Code  Gb  lcddriver_ist3088.o [1]
-DebugMon_Handler        0x080032cf      0x2  Code  Gb  stm32l4xx_it.o [1]
-Debug_printInit         0x08002e77     0x82  Code  Gb  board_init.o [1]
-DisplayCord1            0x20000000   0x12c0  Data  Gb  lcddriver_ist3088.o [1]
-EXTI2_IRQHandler        0x08003313     0x10  Code  Gb  stm32l4xx_it.o [1]
-EXTI9_5_IRQHandler      0x080032d5     0x3e  Code  Gb  stm32l4xx_it.o [1]
-GPIO_PIN                0x08003100      0x2  Data  Gb  stm32l4xx_nucleo.o [1]
-GPIO_PORT               0x20006748      0x4  Data  Gb  stm32l4xx_nucleo.o [1]
-HAL_GPIO_EXTI_Callback  0x080025a1     0x44  Code  Gb  ButtonTask.o [1]
+DebugMon_Handler        0x0800335b      0x2  Code  Gb  stm32l4xx_it.o [1]
+Debug_printInit         0x0800274b     0x82  Code  Gb  board_init.o [1]
+DisplayCord1            0x20000000   0x1c20  Data  Gb  lcddriver_ist3088.o [1]
+EXTI2_IRQHandler        0x0800339f     0x10  Code  Gb  stm32l4xx_it.o [1]
+EXTI9_5_IRQHandler      0x08003361     0x3e  Code  Gb  stm32l4xx_it.o [1]
+GPIO_PIN                0x080031ac      0x2  Data  Gb  stm32l4xx_nucleo.o [1]
+GPIO_PORT               0x200070a8      0x4  Data  Gb  stm32l4xx_nucleo.o [1]
+HAL_GPIO_EXTI_Callback  0x080025a1     0x6e  Code  Gb  ButtonTask.o [1]
 HAL_GPIO_EXTI_IRQHandler
                         0x080024bf     0x12  Code  Gb  stm32l4xx_hal_gpio.o [1]
 HAL_GPIO_Init           0x08002355    0x15a  Code  Gb  stm32l4xx_hal_gpio.o [1]
 HAL_GPIO_WritePin       0x080024af     0x10  Code  Gb  stm32l4xx_hal_gpio.o [1]
 HAL_GetTick             0x08000a95      0xc  Code  Wk  stm32l4xx_hal.o [1]
 HAL_IncTick             0x08000ec9     0x10  Code  Wk  stm32l4xx_hal.o [1]
-HAL_Init                0x08003059     0x20  Code  Gb  stm32l4xx_hal.o [1]
+HAL_Init                0x08003105     0x20  Code  Gb  stm32l4xx_hal.o [1]
 HAL_InitTick            0x08000a05     0x76  Code  Gb  stm32l4xx_hal_timebase_tim.o [1]
 HAL_NVIC_EnableIRQ      0x08000b5f      0x2  Code  Gb  stm32l4xx_hal_cortex.o [1]
 HAL_NVIC_SetPriority    0x08000b41     0x1e  Code  Gb  stm32l4xx_hal_cortex.o [1]
@@ -433,11 +400,11 @@ HAL_TIM_Base_Start_IT   0x08000bd9     0x68  Code  Gb  stm32l4xx_hal_tim.o [1]
 HAL_TIM_IRQHandler      0x08000c51    0x16c  Code  Gb  stm32l4xx_hal_tim.o [1]
 HAL_TIM_PeriodElapsedCallback
                         0x08000a7b      0x4  Code  Gb  stm32l4xx_hal_timebase_tim.o [1]
-HAL_UART_DeInit         0x0800266f     0x3a  Code  Gb  stm32l4xx_hal_uart.o [1]
-HAL_UART_Init           0x08002605     0x6a  Code  Gb  stm32l4xx_hal_uart.o [1]
-HAL_UART_Transmit       0x080026a9     0xd8  Code  Gb  stm32l4xx_hal_uart.o [1]
-HardFault_Handler       0x080032c7      0x2  Code  Gb  stm32l4xx_it.o [1]
-KeyValue                0x2001816c      0x1  Data  Gb  ButtonTask.o [1]
+HAL_UART_DeInit         0x080028a3     0x3a  Code  Gb  stm32l4xx_hal_uart.o [1]
+HAL_UART_Init           0x08002839     0x6a  Code  Gb  stm32l4xx_hal_uart.o [1]
+HAL_UART_Transmit       0x080028dd     0xd8  Code  Gb  stm32l4xx_hal_uart.o [1]
+HardFault_Handler       0x08003353      0x2  Code  Gb  stm32l4xx_it.o [1]
+KeyValue                0x20018acc      0x1  Data  Gb  ButtonTask.o [1]
 Keyboard_Init           0x080024f1     0xb0  Code  Gb  ButtonTask.o [1]
 LCD_BusData             0x08001d73     0x5a  Code  Gb  lcddriver_ist3088.o [1]
 LCD_ClearScreen         0x08001ff1     0x2a  Code  Gb  lcddriver_ist3088.o [1]
@@ -451,76 +418,76 @@ LCD_RdData              0x08001ed1     0x72  Code  Gb  lcddriver_ist3088.o [1]
 LCD_SdCmd               0x08001e1d     0x6c  Code  Gb  lcddriver_ist3088.o [1]
 LCD_SdData              0x08001e89     0x48  Code  Gb  lcddriver_ist3088.o [1]
 LCD_WriteScreen         0x08001fc3     0x2e  Code  Gb  lcddriver_ist3088.o [1]
-LEDThread2Handle        0x20018164      0x4  Data  Gb  main.o [1]
+LEDThread2Handle        0x20018ac4      0x4  Data  Gb  main.o [1]
 Lcd_RdBus               0x08001dcd     0x50  Code  Gb  lcddriver_ist3088.o [1]
-MSIRangeTable           0x08003294     0x30  Data  Gb  system_stm32l4xx.o [1]
-MemManage_Handler       0x080032c9      0x2  Code  Gb  stm32l4xx_it.o [1]
-NMI_Handler             0x080032c5      0x2  Code  Gb  stm32l4xx_it.o [1]
+MSIRangeTable           0x08003320     0x30  Data  Gb  system_stm32l4xx.o [1]
+MemManage_Handler       0x08003355      0x2  Code  Gb  stm32l4xx_it.o [1]
+NMI_Handler             0x08003351      0x2  Code  Gb  stm32l4xx_it.o [1]
 NVIC_EncodePriority     0x08000b09     0x36  Code  Lc  stm32l4xx_hal_cortex.o [1]
 PendSV_Handler          0x08001b8d           Code  Gb  portasm.o [1]
 RCC_SetFlashLatencyFromMSIRange
                         0x08000947     0x7a  Code  Lc  stm32l4xx_hal_rcc.o [1]
-Region$$Table$$Base     0x080033fc            --   Gb  - Linker created -
-Region$$Table$$Limit    0x0800341c            --   Gb  - Linker created -
+Region$$Table$$Base     0x08003488            --   Gb  - Linker created -
+Region$$Table$$Limit    0x080034a8            --   Gb  - Linker created -
 SVC_Handler             0x08001be5           Code  Gb  portasm.o [1]
-SysTick_Handler         0x080032d1      0x4  Code  Gb  stm32l4xx_it.o [1]
-Sysctrl_Handle          0x20018168      0x4  Data  Gb  System_ctrl.o [1]
-Sysctrl_Thread          0x08003329     0x48  Code  Gb  System_ctrl.o [1]
-SystemClock_Config      0x08002fc5     0x6c  Code  Gb  main.o [1]
-SystemCoreClock         0x2000674c      0x4  Data  Gb  system_stm32l4xx.o [1]
-SystemInit              0x08003239     0x3c  Code  Gb  system_stm32l4xx.o [1]
+SysTick_Handler         0x0800335d      0x4  Code  Gb  stm32l4xx_it.o [1]
+Sysctrl_Handle          0x20018ac8      0x4  Data  Gb  System_ctrl.o [1]
+Sysctrl_Thread          0x080033b5     0x48  Code  Gb  System_ctrl.o [1]
+SystemClock_Config      0x08003071     0x6c  Code  Gb  main.o [1]
+SystemCoreClock         0x200070ac      0x4  Data  Gb  system_stm32l4xx.o [1]
+SystemInit              0x080032c5     0x3c  Code  Gb  system_stm32l4xx.o [1]
 TIM6_DAC_IRQHandler     0x08000a7f      0x6  Code  Gb  stm32l4xx_hal_timebase_tim.o [1]
 TIM_Base_SetConfig      0x08000dbd     0x7e  Code  Gb  stm32l4xx_hal_tim.o [1]
-TimHandle               0x20018114     0x4c  Data  Gb  stm32l4xx_hal_timebase_tim.o [1]
-UART_AdvFeatureConfig   0x080029d9     0xc8  Code  Gb  stm32l4xx_hal_uart.o [1]
-UART_CheckIdleState     0x08002aa1     0x62  Code  Gb  stm32l4xx_hal_uart.o [1]
-UART_SetConfig          0x08002781    0x234  Code  Gb  stm32l4xx_hal_uart.o [1]
+TimHandle               0x20018a74     0x4c  Data  Gb  stm32l4xx_hal_timebase_tim.o [1]
+UART_AdvFeatureConfig   0x08002c0d     0xc8  Code  Gb  stm32l4xx_hal_uart.o [1]
+UART_CheckIdleState     0x08002cd5     0x62  Code  Gb  stm32l4xx_hal_uart.o [1]
+UART_SetConfig          0x080029b5    0x234  Code  Gb  stm32l4xx_hal_uart.o [1]
 UART_WaitOnFlagUntilTimeout
-                        0x08002b03     0xa0  Code  Gb  stm32l4xx_hal_uart.o [1]
-UIctrl_Handle           0x20018160      0x4  Data  Gb  Display_task.o [1]
-UIctrl_Thread           0x0800318d     0x6e  Code  Gb  Display_task.o [1]
-UartHandleDebug         0x20018094     0x80  Data  Gb  board_init.o [1]
-UsageFault_Handler      0x080032cd      0x2  Code  Gb  stm32l4xx_it.o [1]
+                        0x08002d37     0xa0  Code  Gb  stm32l4xx_hal_uart.o [1]
+UIctrl_Handle           0x20018ac0      0x4  Data  Gb  Display_task.o [1]
+UIctrl_Thread           0x08003239     0x64  Code  Gb  Display_task.o [1]
+UartHandleDebug         0x200189f4     0x80  Data  Gb  board_init.o [1]
+UsageFault_Handler      0x08003359      0x2  Code  Gb  stm32l4xx_it.o [1]
 __NVIC_EnableIRQ        0x08000ad5     0x16  Code  Lc  stm32l4xx_hal_cortex.o [1]
 __NVIC_GetPriorityGrouping
                         0x08000acb      0xa  Code  Lc  stm32l4xx_hal_cortex.o [1]
 __NVIC_SetPriority      0x08000aeb     0x1e  Code  Lc  stm32l4xx_hal_cortex.o [1]
 __NVIC_SetPriorityGrouping
                         0x08000ab1     0x1a  Code  Lc  stm32l4xx_hal_cortex.o [1]
-__aeabi_ldiv0           0x08002dd9           Code  Gb  I64DivZer.o [5]
-__aeabi_memclr4         0x080025fd           Code  Gb  ABImemclr4.o [5]
-__aeabi_memcpy4         0x08003105           Code  Gb  ABImemcpy.o [5]
-__aeabi_memcpy8         0x08003105           Code  Gb  ABImemcpy.o [5]
+__aeabi_ldiv0           0x0800300d           Code  Gb  I64DivZer.o [5]
+__aeabi_memclr4         0x080026a9           Code  Gb  ABImemclr4.o [5]
+__aeabi_memcpy4         0x080031b1           Code  Gb  ABImemcpy.o [5]
+__aeabi_memcpy8         0x080031b1           Code  Gb  ABImemcpy.o [5]
 __aeabi_memset4         0x080018a1           Code  Gb  ABImemset48.o [5]
 __aeabi_memset8         0x080018a1           Code  Gb  ABImemset48.o [5]
-__aeabi_uldivmod        0x08002ba9           Code  Gb  I64DivMod.o [5]
-__cmain                 0x0800341d           Code  Gb  cmain.o [5]
-__exit                  0x08003451     0x14  Code  Gb  exit.o [6]
+__aeabi_uldivmod        0x08002ddd           Code  Gb  I64DivMod.o [5]
+__cmain                 0x080034a9           Code  Gb  cmain.o [5]
+__exit                  0x080034dd     0x14  Code  Gb  exit.o [6]
 __iar_Memset4_word      0x080018a9           Code  Gb  ABImemset48.o [5]
 __iar_Memset8_word      0x080018a9           Code  Gb  ABImemset48.o [5]
-__iar_data_init3        0x080033b1     0x28  Code  Gb  data_init.o [5]
-__iar_init_vfp          0x080033d9           Code  Gb  fpinit_M.o [4]
+__iar_data_init3        0x0800343d     0x28  Code  Gb  data_init.o [5]
+__iar_init_vfp          0x08003465           Code  Gb  fpinit_M.o [4]
 __iar_lz77_init_single3
                         0x08000e4f     0x7a  Code  Gb  lz77_init_single.o [5]
-__iar_program_start     0x0800348d           Code  Gb  cstartup_M.o [5]
+__iar_program_start     0x08003519           Code  Gb  cstartup_M.o [5]
 __iar_systems$$module {Abs}
                         0x00000001           Data  Gb  command line/config [2]
-__iar_zero_init3        0x08003371     0x40  Code  Gb  zero_init3.o [5]
-__low_level_init        0x0800343b      0x4  Code  Gb  low_level_init.o [3]
+__iar_zero_init3        0x080033fd     0x40  Code  Gb  zero_init3.o [5]
+__low_level_init        0x080034c7      0x4  Code  Gb  low_level_init.o [3]
 __vector_table          0x08000000           Data  Gb  startup_stm32l452xx.o [1]
-_call_main              0x08003429           Code  Gb  cmain.o [5]
-_exit                   0x08003445           Code  Gb  cexit.o [5]
-_main                   0x08003437           Code  Gb  cmain.o [5]
+_call_main              0x080034b5           Code  Gb  cmain.o [5]
+_exit                   0x080034d1           Code  Gb  cexit.o [5]
+_main                   0x080034c3           Code  Gb  cmain.o [5]
 delay_init              0x08001c3d      0x6  Code  Gb  lcddriver_ist3088.o [1]
 delay_ms                0x08001c6d     0x18  Code  Gb  lcddriver_ist3088.o [1]
 delay_us                0x08001c43     0x2a  Code  Gb  lcddriver_ist3088.o [1]
 display_picture         0x0800220f     0x2e  Code  Gb  lcddriver_ist3088.o [1]
-exit                    0x0800343f      0x4  Code  Gb  exit.o [3]
-gImage_ba               0x20004b10   0x1c20  Data  Gb  lcddriver_ist3088.o [1]
-gImage_ts               0x20002ee8   0x1c28  Data  Gb  lcddriver_ist3088.o [1]
-gImage_wukong           0x200012c0   0x1c28  Data  Gb  lcddriver_ist3088.o [1]
+exit                    0x080034cb      0x4  Code  Gb  exit.o [3]
+gImage_ba               0x20005470   0x1c20  Data  Gb  lcddriver_ist3088.o [1]
+gImage_ts               0x20003848   0x1c28  Data  Gb  lcddriver_ist3088.o [1]
+gImage_wukong           0x20001c20   0x1c28  Data  Gb  lcddriver_ist3088.o [1]
 inHandlerMode           0x0800227f      0xe  Code  Lc  cmsis_os.o [1]
-main                    0x08002f65     0x54  Code  Gb  main.o [1]
+main                    0x08003011     0x54  Code  Gb  main.o [1]
 makeFreeRtosPriority    0x08002271      0xe  Code  Lc  cmsis_os.o [1]
 osDelay                 0x080022f1     0x10  Code  Gb  cmsis_os.o [1]
 osKernelRunning         0x08002297     0x12  Code  Gb  cmsis_os.o [1]
@@ -548,29 +515,29 @@ prvResetNextTaskUnblockTime
 prvTaskExitError        0x08001995     0x28  Code  Lc  port.o [1]
 prvTaskIsTaskSuspended  0x080011a3     0x38  Code  Lc  tasks.o [1]
 pvPortMalloc            0x080016bd     0xdc  Code  Gb  heap_4.o [1]
-pxCurrentTCB            0x20017f90      0x4  Data  Gb  tasks.o [1]
-pxDelayedTaskList       0x20017f94      0x4  Data  Lc  tasks.o [1]
-pxEnd                   0x20006758      0x4  Data  Lc  heap_4.o [1]
+pxCurrentTCB            0x200188f0      0x4  Data  Gb  tasks.o [1]
+pxDelayedTaskList       0x200188f4      0x4  Data  Lc  tasks.o [1]
+pxEnd                   0x200070b8      0x4  Data  Lc  heap_4.o [1]
 pxOverflowDelayedTaskList
-                        0x20017f98      0x4  Data  Lc  tasks.o [1]
+                        0x200188f8      0x4  Data  Lc  tasks.o [1]
 pxPortInitialiseStack   0x0800196d     0x28  Code  Gb  port.o [1]
-pxReadyTasksLists       0x20018008     0x8c  Data  Lc  tasks.o [1]
-strlen                  0x08002f2d           Code  Gb  strlen.o [5]
-ucHeap                  0x20006768  0x11800  Data  Lc  heap_4.o [1]
-ucMaxSysCallPriority    0x20006730      0x1  Data  Lc  port.o [1]
-ulMaxPRIGROUPValue      0x20006738      0x4  Data  Lc  port.o [1]
-uwTick                  0x20006740      0x4  Data  Gb  stm32l4xx_hal.o [1]
-uwTickFreq              0x2000673c      0x1  Data  Gb  stm32l4xx_hal.o [1]
-uwTickPrio              0x20006744      0x4  Data  Gb  stm32l4xx_hal.o [1]
-uxCriticalNesting       0x20006734      0x4  Data  Lc  port.o [1]
-uxCurrentNumberOfTasks  0x20017fb4      0x4  Data  Lc  tasks.o [1]
+pxReadyTasksLists       0x20018968     0x8c  Data  Lc  tasks.o [1]
+strlen                  0x08002801           Code  Gb  strlen.o [5]
+ucHeap                  0x200070c8  0x11800  Data  Lc  heap_4.o [1]
+ucMaxSysCallPriority    0x20007090      0x1  Data  Lc  port.o [1]
+ulMaxPRIGROUPValue      0x20007098      0x4  Data  Lc  port.o [1]
+uwTick                  0x200070a0      0x4  Data  Gb  stm32l4xx_hal.o [1]
+uwTickFreq              0x2000709c      0x1  Data  Gb  stm32l4xx_hal.o [1]
+uwTickPrio              0x200070a4      0x4  Data  Gb  stm32l4xx_hal.o [1]
+uxCriticalNesting       0x20007094      0x4  Data  Lc  port.o [1]
+uxCurrentNumberOfTasks  0x20018914      0x4  Data  Lc  tasks.o [1]
 uxDeletedTasksWaitingCleanUp
-                        0x20017f9c      0x4  Data  Lc  tasks.o [1]
+                        0x200188fc      0x4  Data  Lc  tasks.o [1]
 uxListRemove            0x08001947     0x26  Code  Gb  list.o [1]
-uxPendedTicks           0x20017fc4      0x4  Data  Lc  tasks.o [1]
-uxSchedulerSuspended    0x20017fd8      0x4  Data  Lc  tasks.o [1]
-uxTaskNumber            0x20017fd0      0x4  Data  Lc  tasks.o [1]
-uxTopReadyPriority      0x20017fbc      0x4  Data  Lc  tasks.o [1]
+uxPendedTicks           0x20018924      0x4  Data  Lc  tasks.o [1]
+uxSchedulerSuspended    0x20018938      0x4  Data  Lc  tasks.o [1]
+uxTaskNumber            0x20018930      0x4  Data  Lc  tasks.o [1]
+uxTopReadyPriority      0x2001891c      0x4  Data  Lc  tasks.o [1]
 vListInitialise         0x080018db     0x1a  Code  Gb  list.o [1]
 vListInitialiseItem     0x080018f5      0x6  Code  Gb  list.o [1]
 vListInsert             0x08001913     0x34  Code  Gb  list.o [1]
@@ -588,21 +555,21 @@ vTaskStartScheduler     0x080012d9     0x60  Code  Gb  tasks.o [1]
 vTaskSuspend            0x080010df     0xc4  Code  Gb  tasks.o [1]
 vTaskSuspendAll         0x08001341      0xc  Code  Gb  tasks.o [1]
 vTaskSwitchContext      0x080014f1     0x5e  Code  Gb  tasks.o [1]
-xBlockAllocatedBit      0x20006764      0x4  Data  Lc  heap_4.o [1]
-xDelayedTaskList1       0x20017fdc     0x14  Data  Lc  tasks.o [1]
-xDelayedTaskList2       0x20017ff0     0x14  Data  Lc  tasks.o [1]
-xFreeBytesRemaining     0x2000675c      0x4  Data  Lc  heap_4.o [1]
-xIdleTaskHandle         0x20018004      0x4  Data  Lc  tasks.o [1]
+xBlockAllocatedBit      0x200070c4      0x4  Data  Lc  heap_4.o [1]
+xDelayedTaskList1       0x2001893c     0x14  Data  Lc  tasks.o [1]
+xDelayedTaskList2       0x20018950     0x14  Data  Lc  tasks.o [1]
+xFreeBytesRemaining     0x200070bc      0x4  Data  Lc  heap_4.o [1]
+xIdleTaskHandle         0x20018964      0x4  Data  Lc  tasks.o [1]
 xMinimumEverFreeBytesRemaining
-                        0x20006760      0x4  Data  Lc  heap_4.o [1]
-xNextTaskUnblockTime    0x20017fd4      0x4  Data  Lc  tasks.o [1]
-xNumOfOverflows         0x20017fcc      0x4  Data  Lc  tasks.o [1]
-xPendingReadyList       0x20017f68     0x14  Data  Lc  tasks.o [1]
+                        0x200070c0      0x4  Data  Lc  heap_4.o [1]
+xNextTaskUnblockTime    0x20018934      0x4  Data  Lc  tasks.o [1]
+xNumOfOverflows         0x2001892c      0x4  Data  Lc  tasks.o [1]
+xPendingReadyList       0x200188c8     0x14  Data  Lc  tasks.o [1]
 xPortStartScheduler     0x080019bd     0xc0  Code  Gb  port.o [1]
 xPortSysTickHandler     0x08001ad5     0x28  Code  Gb  port.o [1]
-xSchedulerRunning       0x20017fc0      0x4  Data  Lc  tasks.o [1]
-xStart                  0x20006750      0x8  Data  Lc  heap_4.o [1]
-xSuspendedTaskList      0x20017fa0     0x14  Data  Lc  tasks.o [1]
+xSchedulerRunning       0x20018920      0x4  Data  Lc  tasks.o [1]
+xStart                  0x200070b0      0x8  Data  Lc  heap_4.o [1]
+xSuspendedTaskList      0x20018900     0x14  Data  Lc  tasks.o [1]
 xTaskCreate             0x08000ee9     0x62  Code  Gb  tasks.o [1]
 xTaskGetSchedulerState  0x08001635     0x1c  Code  Gb  tasks.o [1]
 xTaskGetTickCount       0x0800140d      0x8  Code  Gb  tasks.o [1]
@@ -612,21 +579,21 @@ xTaskIncrementTick      0x08001423     0xce  Code  Gb  tasks.o [1]
 xTaskResumeAll          0x0800134d     0xc0  Code  Gb  tasks.o [1]
 xTaskResumeFromISR      0x08001253     0x86  Code  Gb  tasks.o [1]
 xTasksWaitingTermination
-                        0x20017f7c     0x14  Data  Lc  tasks.o [1]
-xTickCount              0x20017fb8      0x4  Data  Lc  tasks.o [1]
-xYieldPending           0x20017fc8      0x4  Data  Lc  tasks.o [1]
+                        0x200188dc     0x14  Data  Lc  tasks.o [1]
+xTickCount              0x20018918      0x4  Data  Lc  tasks.o [1]
+xYieldPending           0x20018928      0x4  Data  Lc  tasks.o [1]
 
 
-[1] = D:\电子资料 PDF\st\en.stm32cubel4_v1-16-0_v1.16.0\github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj
+[1] = D:\study_github\Projects\NUCLEO-L452RE\Applications\FreeRTOS\FreeRTOS_ThreadCreation\EWARM\STM32L452RE_NUCLEO\Obj
 [2] = command line
 [3] = dl7M_tlf.a
 [4] = m7M_tls.a
 [5] = rt7M_tl.a
 [6] = shb_l.a
 
-  13 670 bytes of readonly  code memory
-   8 226 bytes of readonly  data memory
-  99 693 bytes of readwrite data memory
+   13 810 bytes of readonly  code memory
+    9 315 bytes of readonly  data memory
+  102 093 bytes of readwrite data memory
 
 Errors: none
 Warnings: none

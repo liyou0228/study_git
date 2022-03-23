@@ -21,6 +21,8 @@
 #include <string.h>
 
 #include "T55x_module.h"
+#include "stm32l4xx_hal_tim.h"
+    
 //#include "stm32l4xx_hal_uart.h"
 
 /* Private variables ---------------------------------------------------------*/
@@ -29,6 +31,18 @@
 UART_HandleTypeDef UartHandleDebug;
 
 uint8_t TxBuff[10]={0,1,2,3,4,5,6,7,8,9};
+
+
+#define  BRIGHTNESS_PERIOD        (uint32_t)(100)             /* Period Value  */
+#define  BRIGHTNESS_DUTY_25       (uint32_t)(BRIGHTNESS_PERIOD/4)        /* 25%  */
+#define  BRIGHTNESS_DUTY_50       (uint32_t)(BRIGHTNESS_PERIOD/2)        /* 50%  */
+#define  BRIGHTNESS_DUTY_75       (uint32_t)(BRIGHTNESS_PERIOD*3/4)   /* 75%  */
+#define  BRIGHTNESS_DUTY_100      BRIGHTNESS_PERIOD                      /* 100%  */
+/****************************************************************************
+ *  TYPE DECLARATIONS
+ *****************************************************************************/
+TIM_HandleTypeDef     TimHandle1;
+TIM_OC_InitTypeDef    TimOCConfig;
 
 /* Private functions ---------------------------------------------------------*/
 
@@ -39,7 +53,7 @@ uint8_t TxBuff[10]={0,1,2,3,4,5,6,7,8,9};
   */
 void Board_GpioInit(void);
 void Debug_printInit(void);
-
+void Board_BrightnessInit(void);
 
 void Board_Init(void)
 {
@@ -50,6 +64,8 @@ void Board_Init(void)
   Debug_printInit();
   DPrint_Out("Debug print Inito sucessful!\r\n");
 
+  Board_BrightnessInit();
+  
 }
 
 void DPrint_Out(const char* szText,...)
@@ -137,6 +153,103 @@ void Debug_printInit(void)
   }  
 
 }
+
+/**
+  * @brief  backlight program
+  * @param  None
+  * @retval None
+  */ 
+
+void Board_BrightnessInit(void)
+{
+    //#ifdef STM32L452XX
+    GPIO_InitTypeDef GPIO_InitStruct ={0};
+    
+    __HAL_RCC_GPIOB_CLK_ENABLE();
+    
+    GPIO_InitStruct.Pin = GPIO_PIN_15;
+    GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+    GPIO_InitStruct.Pull = GPIO_PULLUP;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+    GPIO_InitStruct.Alternate = GPIO_AF1_TIM1;
+    HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+    
+    __HAL_RCC_TIM1_CLK_ENABLE();
+    
+    /* Prescaler declaration */
+    uint32_t uwPrescalerValue = 0;
+    uwPrescalerValue = (uint32_t) (80000 * 1000 / 1000000) - 1;
+    TimHandle1.Instance = TIM1;
+    TimHandle1.Init.Prescaler = uwPrescalerValue;
+    TimHandle1.Init.Period = BRIGHTNESS_PERIOD;
+    TimHandle1.Init.ClockDivision = 0;
+    TimHandle1.Init.CounterMode = TIM_COUNTERMODE_UP;
+    TimHandle1.Init.RepetitionCounter = 0;
+    HAL_TIM_PWM_Init(&TimHandle1);
+    
+    TimOCConfig.OCMode = TIM_OCMODE_PWM1;
+    TimOCConfig.OCPolarity = TIM_OCPOLARITY_HIGH;
+    TimOCConfig.OCFastMode = TIM_OCFAST_DISABLE;
+    TimOCConfig.OCNPolarity = TIM_OCNPOLARITY_HIGH;
+    TimOCConfig.OCNIdleState = TIM_OCNIDLESTATE_RESET;
+    TimOCConfig.OCIdleState = TIM_OCIDLESTATE_RESET;
+    TimOCConfig.Pulse = BRIGHTNESS_DUTY_25;
+    
+    HAL_TIM_PWM_ConfigChannel(&TimHandle1, &TimOCConfig, TIM_CHANNEL_3);
+    
+    HAL_TIMEx_PWMN_Start(&TimHandle1, TIM_CHANNEL_3);
+    
+//    uint8_t i;
+//    for(i = 0;i<4;i++)
+//    {
+//        Board_setBrightness(i);
+//    }
+    
+}
+
+void Board_setBrightness(Brightness_t brightness)
+{
+    uint32_t BrightnessDuty;
+    
+     uint32_t uwPrescalerValue = 0;
+    uwPrescalerValue = (uint32_t) (80000 * 1000 / 1000000) - 1;
+    TimHandle1.Instance = TIM1;
+    TimHandle1.Init.Prescaler = uwPrescalerValue;
+    TimHandle1.Init.Period = BRIGHTNESS_PERIOD;
+    TimHandle1.Init.ClockDivision = 0;
+    TimHandle1.Init.CounterMode = TIM_COUNTERMODE_UP;
+    TimHandle1.Init.RepetitionCounter = 0;
+    HAL_TIM_PWM_Init(&TimHandle1);   
+    
+    
+    if (brightness == BRIGHTNESS_25_PERCENT)
+      {
+        BrightnessDuty = BRIGHTNESS_DUTY_25;
+      }
+    else if (brightness == BRIGHTNESS_50_PERCENT)
+      {
+        BrightnessDuty = BRIGHTNESS_DUTY_50;
+      }
+    else if (brightness == BRIGHTNESS_75_PERCENT)
+      {
+        BrightnessDuty = BRIGHTNESS_DUTY_75;
+      }
+    else
+      {
+        BrightnessDuty = BRIGHTNESS_DUTY_100;
+      }
+
+    TimOCConfig.OCMode = TIM_OCMODE_PWM1;
+    TimOCConfig.OCPolarity = TIM_OCPOLARITY_HIGH;
+    TimOCConfig.OCFastMode = TIM_OCFAST_DISABLE;
+    TimOCConfig.OCNPolarity = TIM_OCNPOLARITY_HIGH;
+    TimOCConfig.OCNIdleState = TIM_OCNIDLESTATE_RESET;
+    TimOCConfig.OCIdleState = TIM_OCIDLESTATE_RESET;
+    TimOCConfig.Pulse = BrightnessDuty;
+    HAL_TIM_PWM_ConfigChannel(&TimHandle1, &TimOCConfig, TIM_CHANNEL_3);
+    HAL_TIMEx_PWMN_Start(&TimHandle1, TIM_CHANNEL_3);
+}
+
 /**
   * @brief  USB program
   * @param  None

@@ -15,7 +15,6 @@ extern "C" {
   
   
   
-  
 
   
   
@@ -45,7 +44,7 @@ extern "C" {
 void Board_initUSB(void);
 void Board_Init(void);
 void DPrint_Out(const char* szText,...);
-
+void Board_setBrightness(Brightness_t brightness);
 
 
 

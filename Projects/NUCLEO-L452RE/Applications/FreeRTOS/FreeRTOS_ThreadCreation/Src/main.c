@@ -68,8 +68,8 @@ int main(void)
   Board_Init();  
   
   /* Initialize LED */
-  BSP_LED_Init(LED2);
- 
+//  BSP_LED_Init(LED2);
+   
   /* Thread 1 definition */
   osThreadDef(THREAD_1, UIctrl_Thread, osPriorityNormal, 0, 512);
   
@@ -83,7 +83,7 @@ int main(void)
   Sysctrl_Handle = osThreadCreate(osThread(THREAD_2), NULL);  
 
   /* Set thread 2 in suspend state */
-  osThreadSuspend(LEDThread2Handle); 
+//  osThreadSuspend(Sysctrl_Handle); 
 
   /* Start scheduler */
   osKernelStart();

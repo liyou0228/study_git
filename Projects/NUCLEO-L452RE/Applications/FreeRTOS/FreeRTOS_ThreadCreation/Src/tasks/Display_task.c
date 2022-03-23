@@ -5,7 +5,7 @@
 
 
 osThreadId UIctrl_Handle = NULL;
-
+uint8_t displayIndex = 0;
 
 
 
@@ -27,26 +27,26 @@ void UIctrl_Thread(void const *argument)
   
   for (;;)
   {
-    count = osKernelSysTick() + 10000;
+ //   count = osKernelSysTick() + 10000;
 
     /* Turn on LED2 */
-    BSP_LED_On(LED2);
+//    BSP_LED_On(LED2);
 
-    while (count > osKernelSysTick())
+ //   while (count > osKernelSysTick())
     {
       /* Toggle LED2 every 250ms*/
       osDelay(50);
 //      BSP_LED_Toggle(LED2);
-       display_picture(KeyValue);
+       display_picture(displayIndex);
     }
 
     /* Turn off LED2 */
 //    BSP_LED_Off(LED2);
 //    DPrint_Out("KeyValue = %d!\r\n",&KeyValue);
     /* Resume Thread 2 */
-    osThreadResume(Sysctrl_Handle);
+//    osThreadResume(Sysctrl_Handle);
     /* Suspend Thread 1 : current thread */
-    osThreadSuspend(UIctrl_Handle);
+//    osThreadSuspend(UIctrl_Handle);
     
   }
 

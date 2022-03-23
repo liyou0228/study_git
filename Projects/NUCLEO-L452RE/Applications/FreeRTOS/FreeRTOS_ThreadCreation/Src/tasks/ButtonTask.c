@@ -63,13 +63,24 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
   else if((GPIO_Pin == GPIO_PIN_9))
   {
     KeyValue = BUTTON_MENU;
-     DPrint_Out("Menue button is pressed!");    
+    DPrint_Out("Menue button is pressed!"); 
+    bright_status.iflag = 1;
+    bright_status.value += 1;
+    if(bright_status.value > BRIGHTNESS_100_PERCENT)
+    {
+        bright_status.value = BRIGHTNESS_25_PERCENT;
+    }
   //    setButtonIdEvent(BUTTON_MENU);
   //    HAL_TIM_Base_Start_IT(&TimHandle3);
   }
   else if((GPIO_Pin == GPIO_PIN_5))
   {
     KeyValue = BUTTON_UP;
+    displayIndex += 1;
+    if(displayIndex > 4)
+    {
+      displayIndex = 1;
+    }
     DPrint_Out("Up button is pressed!");
   //    setButtonIdEvent(BUTTON_UP);
   //    HAL_TIM_Base_Start_IT(&TimHandle3);
@@ -77,6 +88,11 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
   else if((GPIO_Pin == GPIO_PIN_8))
   {
     KeyValue = BUTTON_DOWN;
+    displayIndex -= 1;
+    if(displayIndex <= 0)
+    {
+        displayIndex = 4;
+    }
     DPrint_Out("Down button is pressed!");
   //    setButtonIdEvent(BUTTON_DOWN);
   //    HAL_TIM_Base_Start_IT(&TimHandle3);

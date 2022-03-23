@@ -2360,11 +2360,11 @@ void display_picture(uint8_t index)
   {
       LCD_WriteScreen(DisplayCord1);
   }  
-  else if(4 == index)
+  else if(3 == index)
   {
      LCD_WriteScreen(gImage_ba);
   }
-  else if(8 == index)
+  else if(4 == index)
   {
     LCD_WriteScreen(gImage_wukong);
   }

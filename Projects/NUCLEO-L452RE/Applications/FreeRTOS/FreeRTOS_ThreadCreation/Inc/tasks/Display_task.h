@@ -10,6 +10,7 @@ extern "C" {
 
  
   
+extern uint8_t displayIndex;  
 extern osThreadId UIctrl_Handle;  
 
 
